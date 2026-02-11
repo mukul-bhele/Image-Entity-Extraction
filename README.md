@@ -51,7 +51,8 @@ Project Organization
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
-
 --------
-
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+To create folder structure as above use cookie cutter
+Step-1: pip install cookiecutter
+Step-2: cookiecutter https://github.com/drivendata/cookiecutter-data-science -c v1
+ 
