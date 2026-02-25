@@ -23,9 +23,11 @@ var/
 .installed.cfg
 *.egg
 
+# Virtual environments
+venv/
+.venv/
+
 # PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
 
@@ -47,11 +49,8 @@ coverage.xml
 *.mo
 *.pot
 
-# Django stuff:
+# Logs
 *.log
-
-# Sphinx documentation
-docs/_build/
 
 # PyBuilder
 target/
@@ -63,27 +62,36 @@ target/
 *.db
 *.rdb
 
-# Pycharm
-.idea
-
-# VS Code
+# IDE
+.idea/
 .vscode/
-
-# Spyder
 .spyproject/
 
 # Jupyter NB Checkpoints
 .ipynb_checkpoints/
 
-# exclude data from source control by default
+# Data (downloaded images, raw/processed CSVs)
 /data/
 
-# Mac OS-specific storage files
+# Model checkpoints and weights
+/models/*.bin
+/models/*.pt
+/models/*.safetensors
+/models/minicpm/
+/models/qwen2_finetuned/
+
+# Output predictions
+/output/
+
+# Mac OS
 .DS_Store
 
-# vim
+# Vim
 *.swp
 *.swo
 
 # Mypy cache
 .mypy_cache/
+
+# Pickle files (intermediate model outputs)
+*.pkl
